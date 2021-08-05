@@ -1,0 +1,38 @@
+.filter_container_main {
+    margin-top: 60px;
+}
+.heading_titles {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.titles {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.titles span {
+    background: #3F0E40;
+    color: #fff;
+    padding: 5px 15px;
+}
+
+.filter_box {
+    padding: 20px;
+    margin: 0px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.filter_box form {
+    display:flex;
+    justify-content: space-around;
+}
+.filter_input {
+    width: 80%;
+    overflow: hidden;
+    border: none;
+    background: #E5E5E5;
+    padding: 10px 15px;
+}
