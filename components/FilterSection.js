@@ -1,7 +1,13 @@
 import filterStyle from '../styles/filtersection.module.css';
 import Container from '@material-ui/core/Container';
+import { useState } from 'react';
 
 const FilterSection = () => {
+
+    
+
+
+
     return (
         <div className={filterStyle.filter_container_main}>
             <Container maxWidth="md">
@@ -22,6 +28,7 @@ const FilterSection = () => {
                 </form>
             </div>
             </Container>
+            
         </div>
     );
 };

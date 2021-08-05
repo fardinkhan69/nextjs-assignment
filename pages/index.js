@@ -1,10 +1,12 @@
 import Head from 'next/head'
+
 import Main from '../components/Main'
 import Sidebar from '../components/Sidebar'
 import homeStyles from '../styles/home.module.css'
 
 
 export default function Home() {
+  
   return (
     <div>
       <Head>

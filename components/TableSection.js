@@ -8,6 +8,7 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import { useState ,useEffect } from 'react';
 
 const useStyles = makeStyles({
     table: {
@@ -29,10 +30,21 @@ function createData(name, calories, fat, carbs, protein) {
 
 
 function TableSection() {
-    const classes = useStyles();
+    const [tableData,setTableData] = useState({})
+    useEffect(()=>{
+        fetch('https://raw.githubusercontent.com/akshita151199/Termmonitor-APIs/main/dashboard')
+        .then(res => res.json())
+        .then(data => setTableData(data))
+    },[])
 
+    console.log(tableData)
+
+    const classes = useStyles();
+    
+    
     return (
         <div>
+            
             <Container maxWidth="md">
                 <div className={tableStyle.texts}>
                     <h3>The terms you are tracking</h3>
@@ -72,3 +84,20 @@ function TableSection() {
 }
 
 export default TableSection
+
+
+// export const getStaticProps = async () => {
+//   const res = await fetch(
+//     `https://jsonplaceholder.typicode.com/posts`
+//   )
+
+//   const article = await res.json()
+
+//   return {
+//     props: {
+//       article,
+//     },
+//   }
+// }
+
+
