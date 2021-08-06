@@ -37,7 +37,7 @@ function TableSection() {
     
     
     return (
-        <div>
+        <div className={tableStyle.mainTableContainer}>
             
             <Container maxWidth="md">
                 <div className={tableStyle.texts}>
@@ -84,6 +84,7 @@ function TableSection() {
                     </Table>
                     </TableContainer>
                 </div>
+                <button className={tableStyle.result_btn}>VIEW RESULT</button>
             </Container>
         </div>
     )

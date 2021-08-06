@@ -15,6 +15,7 @@ body{
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Poppins', sans-serif;
 }
 .btn-primary {
   background-color: #3F0E40;
