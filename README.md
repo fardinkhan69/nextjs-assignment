@@ -5,4 +5,4 @@ Hi I am Fardin . I started this project last night and finished today . In the w
 
 I used flex box for design and also used metarial ui for icons and other purpose . 
 
-live link : 
+live link : https://fardins-nextjs-project.netlify.app/
