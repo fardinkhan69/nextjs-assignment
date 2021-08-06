@@ -11,19 +11,10 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      width: '100%',
-    },
-    heading: {
-      fontSize: theme.typography.pxToRem(15),
-      fontWeight: theme.typography.fontWeightRegular,
-    },
-  }));
+
 
 const Navbar = () => {
 
-  const classes = useStyles();
   return (
     <div className={navStyle.navbar_container}>
       <ul>
@@ -77,7 +68,7 @@ const Navbar = () => {
           id="panel1a-header"
         >
             <StarIcon style={{"marginRight":"20px"}} />
-          <Typography className={classes.heading}>Settings</Typography>
+          <Typography>Settings</Typography>
         </AccordionSummary>
         <AccordionDetails>
             <ul>

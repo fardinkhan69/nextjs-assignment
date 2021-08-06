@@ -7,4 +7,17 @@
 
 .table{
     padding: 15px 5px;
+    font-family: 'Poppins', sans-serif !important;
+
+}
+
+.heading{
+    font-weight:700 !important; 
+}
+
+.table th, .table th tr, .table th tr td{
+    font-family: 'Poppins', sans-serif !important;
+}
+.tdata td{
+    font-family : 'Poppins',sans-serif !important;
 }
