@@ -7,7 +7,7 @@ const Sidebar = () => {
     return (
         <div className={sidebarStyel.sidebar_container}>
             <div className={sidebarStyel.logo_container}>
-                <Image src={logo}  height={80} />
+                <Image src={logo} alt="logo" height={80} />
             </div>
             <div>
                 <Navbar/>
